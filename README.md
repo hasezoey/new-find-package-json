@@ -6,18 +6,29 @@ This package can file (by default) the nearest `package.json` upwards.
 
 ## Usage
 
+Sync:
+
 ```ts
 const findFileFrom = process.cwd();
-for await (const file of find(findFileFrom)) {
+for (const file of findSync(findFileFrom)) {
   console.log("found file:", file);
 }
 ```
 
-Note: it is important to not forget to use `for await..of` instead of just `for..of`
+Async/await (Promises):
+
+```ts
+const findFileFrom = process.cwd();
+for await (const file of findAsync(findFileFrom)) {
+  console.log("found file:", file);
+}
+```
+
+Note: it is important to not forget to use `for await..of` instead of just `for..of` for `findAsync`
 
 ### Options
 
-Options for `find`:
+Options for `findSync` & `findAsync`:
 
 | Index | Name | Type | Default | Description |
 | :---: | :---: | :---: | :---: | :---: |
