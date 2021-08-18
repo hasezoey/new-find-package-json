@@ -2,7 +2,7 @@
 
 Inspired by [`find-package-json`](https://github.com/3rd-Eden/find-package-json)
 
-This package can file (by default) the nearest `package.json` upwards.
+This package can find (by default) the nearest `package.json` (upwards).
 
 ## Usage
 
