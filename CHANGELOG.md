@@ -1,3 +1,15 @@
+## [2.0.0](https://github.com/hasezoey/new-find-package-json/compare/v1.2.0...v2.0.0) (2022-05-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* Typescript "target" is now "es2018", which is a breaking change, but should not affect anything
+as long as the required nodejs version is used (12.22 or higher)
+
+### Features
+
+* remove "tslib" ([e91c6dd](https://github.com/hasezoey/new-find-package-json/commit/e91c6dd7ead410933b2f8cf4a065b61126c7b8da))
+
 ## [1.2.0](https://github.com/hasezoey/new-find-package-json/compare/v1.1.0...v1.2.0) (2022-05-24)
 
 
