@@ -17,14 +17,17 @@
     "importHelpers": true,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
-    "strictNullChecks": true,
-    "strict": true
+    "strictNullChecks": true
   },
   "include": [
     "src/**/*.ts",
-    "test/**/*.ts"
+    "test/**/*.ts",
+    "*.js",
+    ".*.js",
+    "website/**/*.js"
   ],
   "exclude": [
-    "node_modules/**/*"
+    "**/*/node_modules/**/*",
+    "website/build/**/*"
   ]
 }
