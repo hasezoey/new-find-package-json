@@ -96,7 +96,7 @@ function statPathSync(path: string): Stats | undefined {
   try {
     return statSync(path);
   } catch (err) {
-    if (err.code === 'ENOENT') {
+    if (err != undefined && err != null && (err as any)?.code === 'ENOENT') {
       return undefined; // catch the error if the directory dosnt exist, without throwing an error
     }
 
