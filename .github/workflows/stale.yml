@@ -6,17 +6,23 @@ on:
   schedule:
     - cron: '30 1 * * *'
 
+permissions:
+  contents: read
+
 jobs:
   stale:
+    permissions:
+      issues: write  # for actions/stale to close stale issues
+      pull-requests: write  # for actions/stale to close stale PRs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v3
+      - uses: actions/stale@v5
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           stale-issue-message: 'Marking Issue as stale, will be closed in 7 days if no more activity is seen'
           close-issue-message: 'Closing Issue because it is marked as stale'
           stale-issue-label: 'stale'
-          exempt-issue-labels: help wanted,docs,enhancement,feature,discussion,roadmap,bug
+          exempt-issue-labels: help wanted,docs,enhancement,feature,discussion,roadmap,bug,breaking,dependencies
           days-before-stale: 30
           days-before-close: 7
           remove-stale-when-updated: true
