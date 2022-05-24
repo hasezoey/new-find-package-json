@@ -43,7 +43,7 @@
     "@types/debug": "^4.1.7",
     "@types/jest": "^26.0.23",
     "@types/node": "~10.17.60",
-    "@types/tmp": "^0.2.1",
+    "@types/tmp": "^0.2.3",
     "@typescript-eslint/eslint-plugin": "^4.28.1",
     "@typescript-eslint/parser": "^4.28.1",
     "commitlint": "^12.1.4",
