@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "ES2018",
     "lib": [
       "esnext"
     ],
@@ -14,7 +14,7 @@
     "allowJs": false,
     "outDir": "build",
     "inlineSourceMap": true,
-    "importHelpers": true,
+    "importHelpers": false,
     "strictBindCallApply": true,
     "strictFunctionTypes": true,
     "strictNullChecks": true
