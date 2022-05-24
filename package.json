@@ -1,6 +1,6 @@
 {
   "name": "new-find-package-json",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Find the an package.json in the path provided upwards",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
